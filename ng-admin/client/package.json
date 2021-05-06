@@ -24,6 +24,9 @@
     "build": "react-scripts build",
     "heroku-postbuild": "npm run build"
   },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
   "proxy": "http://localhost:5000",
   "eslintConfig": {
     "extends": [
