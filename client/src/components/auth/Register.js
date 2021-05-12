@@ -25,6 +25,13 @@ class Register extends Component {
         }
     }
 
+    componentDidMount() {
+        // If logged in and user navigates to Register redirect to dashboard
+        if(this.props.auth.isAuthenticated) {
+            this.props.history.push("/dashboard");
+        }
+    }
+
     onChange = e => {
         this.setState({ [e.target.id]: e.target.value });
     };
